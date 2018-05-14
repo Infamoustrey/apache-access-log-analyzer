@@ -13,6 +13,8 @@ def analyze (file_name)
         count_hits(line.match(ip_regex), line.match(url_regex), line.match(/secret/) == 'secret', line.match(/200/) != '200' )
     end
     
+    print_hits()
+    
 end
 
 def count_hits(ip, url, secret, error)
