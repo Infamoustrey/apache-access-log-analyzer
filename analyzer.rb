@@ -35,9 +35,9 @@ end
 def print_hits()
   @total_hits_by_ip.sort.each do |ip, val|
         secret = @secret_hits_by_ip["#{ip}"]
-        puts("IP #{ip} hit #{val} times. Secret requested #{secret} times.")
+        puts("IP #{ip} hit #{val} times. Secret requested #{secret} time(s).")
   end
-    puts("#{@error_count} Errors.")
+    puts("#{@error_count} Error(s).")
 end
 
 ARGV.each do |a|
